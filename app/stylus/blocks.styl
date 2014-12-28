@@ -132,6 +132,8 @@
     display inline-block
     margin 0 5px 0 0
     font-weight bold
+
+
 /*блок b-page-ctrl*/
 
 .b-page-ctrl
@@ -176,9 +178,12 @@
     sprite($g-arrd)
 
 .b-toogle-class__sublist
+  display none
   position relative
+  z-index 2
   left -7px
   width 134px
+  background white
   border-right 1px solid #dae1eb
   border-bottom 1px solid #dae1eb
   border-left 1px solid #dae1eb
@@ -199,3 +204,116 @@
     text-decoration none
   &.active
     color #5c7b98
+    
+.b-footer
+  background url("../img/bg/footer-bg.png")
+  font-size 0
+.b-footer__item
+  display inline-block
+  vertical-align top
+.b-footer__item_1
+  margin 0 30px 0 0
+  padding 97px 0 0 0
+  width 230px
+.b-footer__item_2
+.b-footer__item_3
+.b-footer__item_4
+  width 160px
+  padding 60px 10px 0 0
+.b-footer__item_5
+  width 260px
+  padding 70px 0 0 0
+/*блок b-nav */
+
+.b-nav
+  font-size 15px
+.b-nav__title
+  margin 0 0 12px 0
+  color #ffffff
+  font-weight bold
+.b-nav__item
+  margin 9px 0 0 0
+  &:first-child
+    margin 0
+.b-nav__link
+  color white
+  text-decoration underline
+  &:hover
+    text-decoration none
+
+
+/*блок b-store */
+.b-store
+  text-align right
+.b-store__link
+  display inline-block
+  margin 0 0 0 5px
+.b-social__list
+  padding  25px 43px 0 0
+  word-spacing 11px
+  text-align right
+.b-social__item
+  display inline-block
+
+
+
+/*блок b-product */
+.b-catalog__wrap
+  margin 0 0 0 -25px
+  font-size 0
+.b-product
+  display inline-block
+  width 100%
+  vertical-align top
+  margin 0 0 20px 25px
+  border 1px solid #dbe1eb
+  font-size 0
+.b-product__img-wrap
+.b-product__wrap
+  display inline-block
+  vertical-align top
+.b-product__img-wrap
+  width 100%
+  max-width 193px
+  height 158px
+  padding 15px 25px
+  text-align center
+.b-product__wrap
+  padding 30px 0
+  width 100%
+  max-width 545px
+  font-size 15px
+.b-product__title
+  margin  0 0 20px 0
+  font-weight normal
+.b-product__desc
+  color #5c7b98
+  font-size 14px
+  word-spacing 3px
+.b-product__link
+  display inline-block
+  vertical-align: middle;
+  color #00b9fe
+  text-decoration underline
+  &:hover
+    text-decoration none
+.b-product__helper
+  display inline-block
+  height 100%
+  vertical-align: middle
+.b-product__option
+  display inline-block
+  margin 0 3px 0 0
+.b-product_grid
+  max-width 230px
+  padding 14px
+  .b-product__wrap
+    padding 0
+  .b-product__option
+    margin 7px 0 0 0
+  &:first-child
+    margin 0
+  .b-product__option_name
+    display inline-block
+    width 90px
+    padding 0 5px 0 0

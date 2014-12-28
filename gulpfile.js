@@ -36,7 +36,7 @@ gulp.task('watch', function () {
     gulp.watch(['./app/css/*.css'], ['css']);
     gulp.watch(['./app/js/*.js'], ['js']);
     gulp.watch(['./app/jade/**/*.jade'], ['jade']);
-    gulp.watch(['./app/img/**/*.*', '!./app/img/sprite/*.*'], ['imgmin']);
+    //gulp.watch(['./app/img/**/*.*', '!./app/img/sprite/*.*'], ['imgmin']);
     gulp.watch(['./app/img/sprite/*.*'], ['sprite']);
     gulp.watch(['./app/stylus/**/*.styl'], ['stylus']);
     gulp.watch('./bower.json', ['wiredep']);

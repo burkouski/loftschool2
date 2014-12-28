@@ -90,31 +90,64 @@ block page
                             .b-catalog__wrap
                                 .b-product
                                     .b-product__img-wrap
+                                        span.b-product__helper
                                         a.b-product__link(href='/')
-                                            img.b-product__img
+                                            img.b-product__img(src='/img/uploads/product.png', alt='Apple Thunderbolt Display 27')
                                     .b-product__wrap
-                                        h3.b-product
+                                        h3.b-product__title
+
                                             a.b-product__link(href='/') Apple Thunderbolt Display 27"
-                                        p.b-product__desc Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.b-product_grid
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='/img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
+
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
 
                             .b-page-ctrl
                                 .b-page-ctrl__item.b-page-ctrl__item_1.g-fleft
-                                    .b-breadcrumbs
-                                        ul.b-breadcrumbs__list
-                                            li.b-breadcrumbs__item
-                                                a.b-breadcrumbs__link(href='/') Главная
-                                            li.b-breadcrumbs__item
-                                                span.b-breadcrumbs__separator >
-                                            li.b-breadcrumbs__item
-                                                span.b-breadcrumbs__unlink Каталог
-                                .b-page-ctrl__item.b-page-ctrl__item_2.g-fleft
                                     .b-toogle-class
                                         ul.b-toogle-class__list.g-unstyled
                                             li.b-toogle-class__item.b-toogle-class__item_brd Линиями
                                                 ul.b-toogle-class__sublist.g-unstyled
                                                     li.b-toogle-class__item Линиями
                                                     li.b-toogle-class__item Сеткой
-                                .b-page-ctrl__item.b-page-ctrl__item_3.g-fright
+                                .b-page-ctrl__item.b-page-ctrl__item_2.g-fright
                                     .b-pagination
                                         ul.b-pagination__list.g-unstyled
                                             li.b-pagination__item.active
@@ -129,6 +162,7 @@ block page
                                                 a.b-pagination__link(href='/') 5
                                             li.b-pagination__item
                                                 a.b-pagination__link(href='/') Все
+
                         article.b-article
                             h3.b-article__title
                             p.b-article__text
@@ -140,44 +174,45 @@ block page
                 .b-logo
                     a.b-logo__link(href='/')
                         img.b-logo__img(src='./img/logo-s.png', alt='Эппл Shop | На главную')
-                        span.g-replace-text Эппл Shop
+                        span.g-hide-text Эппл Shop
             .b-footer__item.b-footer__item_2
                 nav.b-nav
-                    h4.b-nav
-                    ul.b-nav__list
+                    h4.b-nav__title О магазине
+                    ul.b-nav__list.g-unstyled
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') О нас
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Наши цены
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Наши скидки
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Акции
 
             .b-footer__item.b-footer__item_3
                 nav.b-nav
-                    h4.b-nav
-                    ul.b-nav__list
+                    h4.b-nav__title Каталог
+                    ul.b-nav__list.g-unstyled
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Смартфоны
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Планшеты
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Компьютеры
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Аксессуары
+
             .b-footer__item.b-footer__item_4
                 nav.b-nav
-                    h4.b-nav
-                    ul.b-nav__list
+                    h4.b-nav__title Контакты
+                    ul.b-nav__list.g-unstyled
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Телефоны
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Адреса
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Карта проезда
                         li.b-nav__item
-                            a.b-nav__link(href='/')
+                            a.b-nav__link(href='/') Обратная связь
             .b-footer__item.b-footer__item_5
                 .b-store
                     a.b-store__link(href='/')
@@ -187,7 +222,7 @@ block page
                         img.b-store__img(src='./img/uploads/gplay.png')
                         span.g-replace-text
                 .b-social
-                    ul.b-social__list
+                    ul.b-social__list.g-unstyled
                         li.b-social__item
                             a.b-social__link(href='/')
                                 img.b-social__img(src='./img/uploads/vk.png')
