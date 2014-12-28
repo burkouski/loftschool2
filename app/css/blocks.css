@@ -171,6 +171,9 @@
   margin: 0 5px 0 0;
   font-weight: bold;
 }
+.b-catalog-nav__sublist {
+  display: none;
+}
 /*блок b-page-ctrl*/
 .b-page-ctrl {
   padding: 16px 0;
