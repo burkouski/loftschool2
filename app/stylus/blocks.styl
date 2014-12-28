@@ -9,17 +9,20 @@
 .b-header__item_1
   padding 24px 0 0 0
 .b-header__item_2
-  padding 22px 0 0 0
+  padding 20px 0 0 0
 
 /*блок b-contacts*/
+.b-contacts__item
+  margin 0 0 3px 0
 .b-contacts__phone
   color #00b9fe
   font-family 'elektra_m'
-  font-size 16px
+  font-size 15px
   font-weight bold
   text-decoration none
 .b-contacts__phone_big
   vertical-align top
+  margin 0 0 0 7px
   color #5c7b98
   font-weight normal
   font-size 25px
@@ -41,16 +44,17 @@
   display inline-block
   &:first-child
     .b-mainnav__link
-      padding 0 8px 0 10px
+      padding 0 9px 0 10px
 .b-mainnav__link
   position relative
   display block
+  height 40px
   padding 0 8px 0 30px
   background #f7f7f7
   color #5c7b98
   font-family 'elektra_l'
   font-size 15px
-  line-height 40px
+  line-height 42px
   text-decoration none
   &:before
   &:after
@@ -93,7 +97,7 @@
 
 .b-page
   clearfix()
-  padding 14px 0 79px 0
+  padding 0px 0 79px 0
 .b-page__sidebar
 .b-page__content
   float left
@@ -120,7 +124,7 @@
       color #ffffff
 .b-catalog-nav__link
   display block
-  padding 8px 19px
+  padding 6px 17px 5px
   background #f7f7f7
   border-top 1px solid #dae1eb
   color #5c7b98
@@ -138,16 +142,16 @@
 
 .b-page-ctrl
   clearfix()
-  padding 17px 0
+  padding 16px 0
 .b-page-ctrl__item_3
-  margin 0 30px
+  margin 0 27px
 
 /*блок b-breadcrumbs*/
 .b-breadcrumbs__list
+  padding 3px 0 0 0
   font-size 0
 .b-breadcrumbs__item
   display inline-block
-  margin 0 3px 0 0
   color #5c7b98
   font-size 14px
 .b-breadcrumbs__link
@@ -189,11 +193,14 @@
   border-left 1px solid #dae1eb
 
 .b-pagination__list
+  padding 6px
   font-size 0
 .b-pagination__item
   display inline-block
-  margin 0 0 0 7px
+  margin 0 0 0 9px
   font-size 15px
+  &:first-child
+    margin 0
   &.active
     .b-pagination__link
       color #5c7b98
