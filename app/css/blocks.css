@@ -171,6 +171,9 @@
   margin: 0 5px 0 0;
   font-weight: bold;
 }
+.b-catalog-nav__sublist {
+  display: none;
+}
 /*блок b-page-ctrl*/
 .b-page-ctrl {
   padding: 16px 0;
@@ -401,4 +404,17 @@
   display: inline-block;
   width: 90px;
   padding: 0 5px 0 0;
+}
+.b-totop {
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+  width: 77px;
+  height: 39px;
+  background-image: url("../img/bg/");
+  background-position: ;
+  width: ;
+  height: ;
+  outline: 1px solid #f00;
+  line-height: 39px;
 }

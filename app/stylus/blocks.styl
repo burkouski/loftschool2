@@ -130,13 +130,15 @@
   color #5c7b98
   font-size 15px
   text-decoration none
+
 .b-catalog-nav__link_sub
   &:before
     content ">"
     display inline-block
     margin 0 5px 0 0
     font-weight bold
-
+.b-catalog-nav__sublist
+    display none
 
 /*блок b-page-ctrl*/
 
@@ -324,3 +326,14 @@
     display inline-block
     width 90px
     padding 0 5px 0 0
+
+.b-totop
+  position fixed
+  right 50px
+  bottom 200px
+  width 77px
+  height 39px
+  spriteImage($g-totop)
+  sprite($g-totop)
+  outline 1px solid red
+  line-height 39px

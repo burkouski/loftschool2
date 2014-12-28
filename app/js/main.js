@@ -1,3 +1,26 @@
-/**
- * Created by Администратор on 26.12.2014.
- */
+$(function(){
+    $('.js-triger').on('click', function(e){
+        e.preventDefault();
+
+        var $this = $(this),
+            item = $this.closest('.js-item'),
+            list = $this.closest('.js-list'),
+            items = list.find('.js-item'),
+            content = item.find('.js-sublist'),
+            otherContent = list.find('.js-sublist'),
+            duration = 300;
+        console.log(item)
+        if (!item.hasClass('active')) {
+            items.removeClass('active');
+            item.addClass('active');
+
+            otherContent.stop(true, true).slideUp(duration);
+            content.stop(true, true).slideDown(duration);
+
+        } else {
+            content.stop(true, true).slideUp(duration);
+            item.removeClass('active');
+        }
+
+    });
+})

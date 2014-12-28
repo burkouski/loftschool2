@@ -111,6 +111,7 @@ input:-ms-input-placeholder:focus:-ms-input-placeholder {
   height: 120px;
 }
 .g-container {
+  position: relative;
   width: 1000px;
   margin: 0 auto;
 }
