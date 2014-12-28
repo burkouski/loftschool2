@@ -1,0 +1,83 @@
+/*Переменные настройки*/
+* {
+  box-sizing: border-box;
+  inline-box-align: align-content;
+}
+/*Стилизация placeholder*/
+input::-webkit-input-placeholder {
+  color: #fff !important;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+          transition: text-indent 0.3s ease;
+}
+input::-moz-placeholder {
+  color: #fff !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:-moz-placeholder {
+  color: #fff !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder {
+  color: #fff !important;
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
+}
+/*сброс стилей для списков*/
+.g-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Скрытие текста*/
+.g-hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*иконки*/
+.g-icon {
+  display: block;
+  background: url("../img/bg/sprite.png") no-repeat;
+}
+/*Футер к низу страницы*/
+.b-html,
+.b-body {
+  height: 100%;
+}
+.g-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -238px;
+}
+.g-footer-push {
+  height: 238px;
+}
+.b-footer {
+  height: 238px;
+}
+.g-container {
+  width: 1000px;
+  margin: 0 auto;
+}

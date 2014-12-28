@@ -1,0 +1,203 @@
+extends ./layout.jade
+
+block page
+    .g-wrapper
+        header.b-header
+            .g-container
+                .b-header__item.g-fleft
+                    .b-logo
+                        a.b-logo__link(href='/')
+                            img.b-logo__img(src='./img/logo.png', alt='Эппл Shop | На главную')
+                            span.g-replace-text Эппл Shop
+                .b-header__item.g-fright
+                    .b-contacts
+                        .b-contacts__item
+                            a.b-contacts__phone(href='tel:+79213221232') +7 (921)
+                                span.b-contacts__phone_big 322 12 32
+                        .b-contacts__item
+                            a.b-contacts__mail(href='mailto:manager@company.com') manager@company.com
+        .g-container
+            nav.b-mainnav
+                ul.b-mainnav__list
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Мобильные телефоны
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Планшеты
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Мр3 плееры
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Персональные компьютеры
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Ноутбуки
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Apple TV
+                    li.b-mainnav__item
+                        a.b-mainnav__link(href='/') Аксессуары
+        main.b-main
+            .g-container
+                .page-ctrl
+                    .page-ctrl__item.page-ctrl__item_1.g-fleft
+                        .b-breadcrumbs
+                            ul.b-breadcrumbs__list
+                                li.b-breadcrumbs__item
+                                    a.b-breadcrumbs__link(href='/') Главная
+                                li.b-breadcrumbs__item
+                                    span.b-breadcrumbs__separator >
+                                li.b-breadcrumbs__item
+                                    span.b-breadcrumbs__unlink Каталог
+                    .page-ctrl__item.page-ctrl__item_2.g-fleft
+                        .b-toogle-class
+                            ul.b-toogle-class__list
+                                li.b-toogle-class__item.b-toogle-class__item_brd Линиями
+                                    ul.b-toogle-class__sublist
+                                        li.b-toogle-class__item Линиями
+                                        li.b-toogle-class__item Сеткой
+                    .page-ctrl__item.page-ctrl__item_3.g-fright
+                        .b-pagination
+                            ul.b-pagination__list
+                                li.b-pagination__item.active
+                                    span.b-pagination__link(href='/') 1
+                                li.b-pagination__item
+                                    a.b-pagination__link(href='/') 2
+                                li.b-pagination__item
+                                    a.b-pagination__link(href='/') 3
+                                li.b-pagination__item
+                                    a.b-pagination__link(href='/') 4
+                                li.b-pagination__item
+                                    a.b-pagination__link(href='/') 5
+                                li.b-pagination__item
+                                    a.b-pagination__link(href='/') Все
+                section.b-page
+                    aside.b-page__sidebar
+                        nav.b-catalog-nav
+                            ul.b-catalog-nav__list
+                                li.b-catalog-nav__item
+                                    a.b-catalog-nav__link(href='/') iPhone
+                                    ul.b-catalog-nav__sublist
+                                        li.b-catalog-nav__item.b-catalog-nav__item
+                                            a.b-catalog-nav__link.b-catalog-nav__link_sub(href='/') iPhone 4s
+                                        li.b-catalog-nav__item.b-catalog-nav__item
+                                            a.b-catalog-nav__link.b-catalog-nav__link_sub(href='/') iPhone 5
+                                        li.b-catalog-nav__item.b-catalog-nav__item
+                                            a.b-catalog-nav__link.b-catalog-nav__link_sub(href='/') iPhone 5s с эксклюзивным дизайном
+                                        li.b-catalog-nav__item.b-catalog-nav__item
+                                            a.b-catalog-nav__link.b-catalog-nav__link_sub(href='/') iPhone 6
+                                        li.b-catalog-nav__item.b-catalog-nav__item
+                                            a.b-catalog-nav__link.b-catalog-nav__link_sub(href='/') iPhone 6 plus
+
+                    section.b-page__content
+                        .b-catalog
+                            .b-catalog__wrap
+                                .b-product
+                                    .b-product__img-wrap
+                                        a.b-product__link(href='/')
+                                            img.b-product__img
+                                    .b-product__wrap
+                                        h3.b-product
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг
+
+                            .page-ctrl
+                                .page-ctrl__item.page-ctrl__item_1.g-fleft
+                                    .b-breadcrumbs
+                                        ul.b-breadcrumbs__list
+                                            li.b-breadcrumbs__item
+                                                a.b-breadcrumbs__link(href='/') Главная
+                                            li.b-breadcrumbs__item
+                                                span.b-breadcrumbs__separator >
+                                            li.b-breadcrumbs__item
+                                                span.b-breadcrumbs__unlink Каталог
+                                .page-ctrl__item.page-ctrl__item_2.g-fleft
+                                    .b-toogle-class
+                                        ul.b-toogle-class__list
+                                            li.b-toogle-class__item.b-toogle-class__item_brd Линиями
+                                                ul.b-toogle-class__sublist
+                                                    li.b-toogle-class__item Линиями
+                                                    li.b-toogle-class__item Сеткой
+                                .page-ctrl__item.page-ctrl__item_3.g-fright
+                                    .b-pagination
+                                        ul.b-pagination__list
+                                            li.b-pagination__item.active
+                                                span.b-pagination__link(href='/') 1
+                                            li.b-pagination__item
+                                                a.b-pagination__link(href='/') 2
+                                            li.b-pagination__item
+                                                a.b-pagination__link(href='/') 3
+                                            li.b-pagination__item
+                                                a.b-pagination__link(href='/') 4
+                                            li.b-pagination__item
+                                                a.b-pagination__link(href='/') 5
+                                            li.b-pagination__item
+                                                a.b-pagination__link(href='/') Все
+                        article.b-article
+                            h3.b-article__title
+                            p.b-article__text
+                            p.b-article__text
+
+            .g-footer-push
+    footer.b-footer
+        .g-container
+            .b-footer__item.b-footer__item_1
+                .b-logo
+                    a.b-logo__link(href='/')
+                        img.b-logo__img(src='./img/logo-s.png', alt='Эппл Shop | На главную')
+                        span.g-replace-text Эппл Shop
+            .b-footer__item.b-footer__item_2
+                nav.b-nav
+                    h4.b-nav
+                    ul.b-nav__list
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+
+            .b-footer__item.b-footer__item_3
+                nav.b-nav
+                    h4.b-nav
+                    ul.b-nav__list
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+            .b-footer__item.b-footer__item_4
+                nav.b-nav
+                    h4.b-nav
+                    ul.b-nav__list
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+                        li.b-nav__item
+                            a.b-nav__link(href='/')
+            .b-footer__item.b-footer__item_5
+                .b-store
+                    a.b-store__link(href='/')
+                        img.b-store__img(src='./img/uploads/appstore.png')
+                        span.g-replace-text
+                    a.b-store__link(href='/')
+                        img.b-store__img(src='./img/uploads/gplay.png')
+                        span.g-replace-text
+                .b-social
+                    ul.b-social__list
+                        li.b-social__item
+                            a.b-social__link(href='/')
+                                img.b-social__img(src='./img/uploads/vk.png')
+                                span.g-replace-text
+                        li.b-social__item
+                            a.b-social__link(href='/')
+                                img.b-social__img(src='./img/uploads/fb.png')
+                                span.g-replace-text
+                        li.b-social__item
+                            a.b-social__link(href='/')
+                                img.b-social__img(src='./img/uploads/tw.png')
+                                span.g-replace-text
