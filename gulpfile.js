@@ -113,7 +113,7 @@ gulp.task('sprite', function() {
         }));
 
     spriteData.img.pipe(gulp.dest('./app/img/bg')); // путь, куда сохраняем спрайт
-    spriteData.css.pipe(gulp.dest('./app/stylus/mixin/')); // путь, куда сохраняем стили
+    spriteData.css.pipe(gulp.dest('./app/stylus/mixins/')); // путь, куда сохраняем стили
 });
 
 // Сборка проекта

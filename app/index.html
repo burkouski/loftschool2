@@ -13,8 +13,9 @@
     <!-- endbuild-->
     <!--build:css ./css/combined.css-->
     <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="./css/blocks.css">
     <!-- endbuild-->
-    <script src="javascripts/vendor/modernizr-2.7.1.min.js"></script>
+    <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
   </head>
   <body class="b-body"><!--[if lt IE 8]>
     <p class="browsehappy">
@@ -25,10 +26,10 @@
     <div class="g-wrapper">
       <header class="b-header">
         <div class="g-container">
-          <div class="b-header__item g-fleft">
-            <div class="b-logo"><a href="/" class="b-logo__link"><img src="./img/logo.png" alt="Эппл Shop | На главную" class="b-logo__img"><span class="g-replace-text">Эппл Shop</span></a></div>
+          <div class="b-header__item b-header__item_1 g-fleft">
+            <div class="b-logo"><a href="/" class="b-logo__link"><img src="./img/logo.png" alt="Эппл Shop | На главную" class="b-logo__img"><span class="g-hide-text">Эппл Shop</span></a></div>
           </div>
-          <div class="b-header__item g-fright">
+          <div class="b-header__item b-header__item_2 g-fright">
             <div class="b-contacts">
               <div class="b-contacts__item"><a href="tel:+79213221232" class="b-contacts__phone">+7 (921)<span class="b-contacts__phone_big">322 12 32</span></a></div>
               <div class="b-contacts__item"><a href="mailto:manager@company.com" class="b-contacts__mail">manager@company.com</a></div>
@@ -38,9 +39,9 @@
       </header>
       <div class="g-container">
         <nav class="b-mainnav">
-          <ul class="b-mainnav__list">
+          <ul class="b-mainnav__list g-unstyled">
             <li class="b-mainnav__item"><a href="/" class="b-mainnav__link">Мобильные телефоны</a></li>
-            <li class="b-mainnav__item"><a href="/" class="b-mainnav__link">Планшеты</a></li>
+            <li class="b-mainnav__item active"><a href="/" class="b-mainnav__link">Планшеты</a></li>
             <li class="b-mainnav__item"><a href="/" class="b-mainnav__link">Мр3 плееры</a></li>
             <li class="b-mainnav__item"><a href="/" class="b-mainnav__link">Персональные компьютеры</a></li>
             <li class="b-mainnav__item"><a href="/" class="b-mainnav__link">Ноутбуки</a></li>
@@ -51,31 +52,19 @@
       </div>
       <main class="b-main">
         <div class="g-container">
-          <div class="page-ctrl">
-            <div class="page-ctrl__item page-ctrl__item_1 g-fleft">
+          <div class="b-page-ctrl">
+            <div class="b-page-ctrl__item b-page-ctrl__item_1 g-fleft">
               <div class="b-breadcrumbs">
-                <ul class="b-breadcrumbs__list">
+                <ul class="b-breadcrumbs__list g-unstyled">
                   <li class="b-breadcrumbs__item"><a href="/" class="b-breadcrumbs__link">Главная</a></li>
                   <li class="b-breadcrumbs__item"><span class="b-breadcrumbs__separator">></span></li>
                   <li class="b-breadcrumbs__item"><span class="b-breadcrumbs__unlink">Каталог</span></li>
                 </ul>
               </div>
             </div>
-            <div class="page-ctrl__item page-ctrl__item_2 g-fleft">
-              <div class="b-toogle-class">
-                <ul class="b-toogle-class__list">
-                  <li class="b-toogle-class__item b-toogle-class__item_brd">Линиями
-                    <ul class="b-toogle-class__sublist">
-                      <li class="b-toogle-class__item">Линиями</li>
-                      <li class="b-toogle-class__item">Сеткой</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="page-ctrl__item page-ctrl__item_3 g-fright">
+            <div class="b-page-ctrl__item b-page-ctrl__item_2 g-fright">
               <div class="b-pagination">
-                <ul class="b-pagination__list">
+                <ul class="b-pagination__list g-unstyled">
                   <li class="b-pagination__item active"><span href="/" class="b-pagination__link">1</span></li>
                   <li class="b-pagination__item"><a href="/" class="b-pagination__link">2</a></li>
                   <li class="b-pagination__item"><a href="/" class="b-pagination__link">3</a></li>
@@ -85,13 +74,25 @@
                 </ul>
               </div>
             </div>
+            <div class="b-page-ctrl__item b-page-ctrl__item_3 g-fright">
+              <div class="b-toogle-class">
+                <ul class="b-toogle-class__list g-unstyled">
+                  <li class="b-toogle-class__item b-toogle-class__item_brd">Линиями
+                    <ul class="b-toogle-class__sublist g-unstyled">
+                      <li class="b-toogle-class__item active">Линиями</li>
+                      <li class="b-toogle-class__item">Сеткой</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <section class="b-page">
             <aside class="b-page__sidebar">
               <nav class="b-catalog-nav">
-                <ul class="b-catalog-nav__list">
-                  <li class="b-catalog-nav__item"><a href="/" class="b-catalog-nav__link">iPhone</a>
-                    <ul class="b-catalog-nav__sublist">
+                <ul class="b-catalog-nav__list g-unstyled">
+                  <li class="b-catalog-nav__item active"><a href="/" class="b-catalog-nav__link">iPhone</a>
+                    <ul class="b-catalog-nav__sublist g-unstyled">
                       <li class="b-catalog-nav__item b-catalog-nav__item"><a href="/" class="b-catalog-nav__link b-catalog-nav__link_sub">iPhone 4s</a></li>
                       <li class="b-catalog-nav__item b-catalog-nav__item"><a href="/" class="b-catalog-nav__link b-catalog-nav__link_sub">iPhone 5</a></li>
                       <li class="b-catalog-nav__item b-catalog-nav__item"><a href="/" class="b-catalog-nav__link b-catalog-nav__link_sub">iPhone 5s с эксклюзивным дизайном</a></li>
@@ -113,8 +114,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="page-ctrl">
-                  <div class="page-ctrl__item page-ctrl__item_1 g-fleft">
+                <div class="b-page-ctrl">
+                  <div class="b-page-ctrl__item b-page-ctrl__item_1 g-fleft">
                     <div class="b-breadcrumbs">
                       <ul class="b-breadcrumbs__list">
                         <li class="b-breadcrumbs__item"><a href="/" class="b-breadcrumbs__link">Главная</a></li>
@@ -123,11 +124,11 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="page-ctrl__item page-ctrl__item_2 g-fleft">
+                  <div class="b-page-ctrl__item b-page-ctrl__item_2 g-fleft">
                     <div class="b-toogle-class">
-                      <ul class="b-toogle-class__list">
+                      <ul class="b-toogle-class__list g-unstyled">
                         <li class="b-toogle-class__item b-toogle-class__item_brd">Линиями
-                          <ul class="b-toogle-class__sublist">
+                          <ul class="b-toogle-class__sublist g-unstyled">
                             <li class="b-toogle-class__item">Линиями</li>
                             <li class="b-toogle-class__item">Сеткой</li>
                           </ul>
@@ -135,9 +136,9 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="page-ctrl__item page-ctrl__item_3 g-fright">
+                  <div class="b-page-ctrl__item b-page-ctrl__item_3 g-fright">
                     <div class="b-pagination">
-                      <ul class="b-pagination__list">
+                      <ul class="b-pagination__list g-unstyled">
                         <li class="b-pagination__item active"><span href="/" class="b-pagination__link">1</span></li>
                         <li class="b-pagination__item"><a href="/" class="b-pagination__link">2</a></li>
                         <li class="b-pagination__item"><a href="/" class="b-pagination__link">3</a></li>
@@ -157,8 +158,8 @@
             </section>
           </section>
         </div>
-        <div class="g-footer-push"></div>
       </main>
+      <div class="g-footer-push"></div>
     </div>
     <footer class="b-footer">
       <div class="g-container">
