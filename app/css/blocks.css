@@ -213,8 +213,10 @@
   color: #5c7b98;
   font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
-.b-toogle-class__item.active {
+.b-toogle-class__item.active,
+.b-toogle-class__item:hover {
   color: #bed1e3;
 }
 .b-toogle-class__item_brd {
@@ -231,6 +233,9 @@
   background-position: -90px 0px;
   width: 26px;
   height: 24px;
+}
+.b-toogle-class__item_brd:hover {
+  color: #5c7b98;
 }
 .b-toogle-class__sublist {
   display: none;
@@ -396,9 +401,6 @@
 }
 .b-product_grid .b-product__option {
   margin: 7px 0 0 0;
-}
-.b-product_grid:first-child {
-  margin: 0;
 }
 .b-product_grid .b-product__option_name {
   display: inline-block;
