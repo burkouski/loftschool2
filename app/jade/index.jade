@@ -63,10 +63,11 @@ block page
                     .b-page-ctrl__item.b-page-ctrl__item_3.g-fright
                         .b-toogle-class
                             ul.b-toogle-class__list.g-unstyled
-                                li.b-toogle-class__item.b-toogle-class__item_brd Линиями
-                                    ul.b-toogle-class__sublist.g-unstyled
-                                        li.b-toogle-class__item.active Линиями
-                                        li.b-toogle-class__item Сеткой
+                                li.b-toogle-class__item.b-toogle-class__item_brd.js-toogle-class__indicator
+                                    span.js-toogle-class__text Линиями
+                                    ul.b-toogle-class__sublist.g-unstyled.js-toogle-class__list
+                                        li.b-toogle-class__item.active.js-toogle-class__trigger(data-action='remove') Линиями
+                                        li.b-toogle-class__item.js-toogle-class__trigger(data-action='add') Сеткой
                 section.b-page
                     aside.b-page__sidebar
                         nav.b-catalog-nav
@@ -127,7 +128,7 @@ block page
                     section.b-page__content
                         .b-catalog
                             .b-catalog__wrap
-                                .b-product
+                                .b-product.js-toogle-class__item
                                     .b-product__img-wrap
                                         span.b-product__helper
                                         a.b-product__link(href='/')
@@ -152,7 +153,7 @@ block page
                                             span.b-product__option
                                                 span.b-product__option_name  Вес:
                                                 span.b-product__option_desc  9 кг
-                                .b-product.b-product_grid
+                                .b-product.js-toogle-class__item
                                     .b-product__img-wrap
                                         span.b-product__helper
                                         a.b-product__link(href='/')
@@ -177,31 +178,156 @@ block page
                                             span.b-product__option
                                                 span.b-product__option_name  Вес:
                                                 span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
 
-                            .b-page-ctrl
-                                .b-page-ctrl__item.b-page-ctrl__item_1.g-fleft
-                                    .b-toogle-class
-                                        ul.b-toogle-class__list.g-unstyled
-                                            li.b-toogle-class__item.b-toogle-class__item_brd Линиями
-                                                ul.b-toogle-class__sublist.g-unstyled
-                                                    li.b-toogle-class__item Линиями
-                                                    li.b-toogle-class__item Сеткой
-                                .b-page-ctrl__item.b-page-ctrl__item_2.g-fright
-                                    .b-pagination
-                                        ul.b-pagination__list.g-unstyled
-                                            li.b-pagination__item.active
-                                                span.b-pagination__link(href='/') 1
-                                            li.b-pagination__item
-                                                a.b-pagination__link(href='/') 2
-                                            li.b-pagination__item
-                                                a.b-pagination__link(href='/') 3
-                                            li.b-pagination__item
-                                                a.b-pagination__link(href='/') 4
-                                            li.b-pagination__item
-                                                a.b-pagination__link(href='/') 5
-                                            li.b-pagination__item
-                                                a.b-pagination__link(href='/') Все
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
 
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
+
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
+
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
+
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
+                                .b-product.js-toogle-class__item
+                                    .b-product__img-wrap
+                                        span.b-product__helper
+                                        a.b-product__link(href='/')
+                                            img.b-product__img(src='./img/uploads/product.png', alt='Apple Thunderbolt Display 27')
+                                    .b-product__wrap
+                                        h3.b-product__title
+
+                                            a.b-product__link(href='/') Apple Thunderbolt Display 27"
+                                        p.b-product__desc
+                                            span.b-product__option
+                                                span.b-product__option_name Артикул:
+                                                span.b-product__option_desc  42787825,
+                                            span.b-product__option
+                                                span.b-product__option_name Опция:
+                                                span.b-product__option_desc  включена,
+                                            span.b-product__option
+                                                span.b-product__option_name  Цвет:
+                                                span.b-product__option_desc  серебристый,
+                                            span.b-product__option
+                                                span.b-product__option_name  Размер:
+                                                span.b-product__option_desc  1280*1245*90,
+                                            span.b-product__option
+                                                span.b-product__option_name  Вес:
+                                                span.b-product__option_desc  9 кг
                         article.b-article
                             h3.b-article__title
                             p.b-article__text
