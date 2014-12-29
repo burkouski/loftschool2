@@ -23,4 +23,24 @@ $(function(){
         }
 
     });
-})
+
+    var
+        $window = $(window),
+        $body = $("body"),
+        $totop = $('.js-totop');
+
+    $window.on('scroll', function(){
+        var $this = $(this);
+        console.log($this.scrollTop());
+        if ($this.scrollTop() > 200) {
+            $totop.slideDown(300)
+        }
+        else {
+            $totop.slideUp(300)
+        }
+    });
+    $(window).scroll();
+    $totop.on('click', function(){
+        $body.animate({ scrollTop: "0" });
+    })
+});

@@ -228,7 +228,7 @@
   right: 0;
   display: block;
   background-image: url("../img/bg/sprite.png");
-  background-position: 0px -40px;
+  background-position: -90px 0px;
   width: 26px;
   height: 24px;
 }
@@ -407,14 +407,19 @@
 }
 .b-totop {
   position: fixed;
-  right: 50px;
-  bottom: 200px;
+  right: 40px;
+  bottom: 300px;
+  display: none;
   width: 77px;
   height: 39px;
-  background-image: url("../img/bg/");
-  background-position: ;
-  width: ;
-  height: ;
-  outline: 1px solid #f00;
-  line-height: 39px;
+  background-image: url("../img/bg/sprite.png");
+  background-position: 0px -40px;
+  width: 77px;
+  height: 39px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
 }
