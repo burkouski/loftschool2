@@ -213,8 +213,10 @@
   color: #5c7b98;
   font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
-.b-toogle-class__item.active {
+.b-toogle-class__item.active,
+.b-toogle-class__item:hover {
   color: #bed1e3;
 }
 .b-toogle-class__item_brd {
@@ -228,9 +230,12 @@
   right: 0;
   display: block;
   background-image: url("../img/bg/sprite.png");
-  background-position: 0px -40px;
+  background-position: -90px 0px;
   width: 26px;
   height: 24px;
+}
+.b-toogle-class__item_brd:hover {
+  color: #5c7b98;
 }
 .b-toogle-class__sublist {
   display: none;
@@ -397,9 +402,6 @@
 .b-product_grid .b-product__option {
   margin: 7px 0 0 0;
 }
-.b-product_grid:first-child {
-  margin: 0;
-}
 .b-product_grid .b-product__option_name {
   display: inline-block;
   width: 90px;
@@ -407,14 +409,19 @@
 }
 .b-totop {
   position: fixed;
-  right: 50px;
-  bottom: 200px;
+  right: 40px;
+  bottom: 300px;
+  display: none;
   width: 77px;
   height: 39px;
-  background-image: url("../img/bg/");
-  background-position: ;
-  width: ;
-  height: ;
-  outline: 1px solid #f00;
-  line-height: 39px;
+  background-image: url("../img/bg/sprite.png");
+  background-position: 0px -40px;
+  width: 77px;
+  height: 39px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
 }
